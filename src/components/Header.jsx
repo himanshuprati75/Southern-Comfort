@@ -181,16 +181,21 @@ export default function Header({ onOpenCallModal }) {
             <div className="hidden sm:flex items-center gap-3">
               <a
                 href="tel:2525862468"
-                className="flex flex-col items-end group"
+                className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl hover:bg-slate-100/90 transition-all group"
+                title="Call (252) 586-2468 immediately"
               >
-                <span className="text-[10px] uppercase font-bold tracking-wider text-warmOrange-600 flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-warmOrange-500 animate-ping"></span>
-                  24/7 Live Emergency Line
-                </span>
-                <span className="text-base font-extrabold text-comfortNavy-950 group-hover:text-warmOrange-600 transition-colors whitespace-nowrap flex items-center gap-1.5">
-                  <Phone className="w-4 h-4 text-warmOrange-500" />
-                  (252) 586-2468
-                </span>
+                <div className="w-8 h-8 rounded-full bg-warmOrange-100 group-hover:bg-warmOrange-600 flex items-center justify-center transition-colors shadow-sm">
+                  <Phone className="w-4 h-4 text-warmOrange-600 group-hover:text-white transition-colors" />
+                </div>
+                <div className="flex flex-col items-start text-left">
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-warmOrange-600 flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-warmOrange-500 animate-ping"></span>
+                    Book a Call Now
+                  </span>
+                  <span className="text-sm md:text-base font-extrabold text-comfortNavy-950 group-hover:text-warmOrange-600 transition-colors whitespace-nowrap">
+                    (252) 586-2468
+                  </span>
+                </div>
               </a>
 
               <button
